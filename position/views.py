@@ -8,5 +8,5 @@ from position.serializers import PositionSerializer
 
 class PositionViewSet(viewsets.ModelViewSet):
     queryset = Position.objects.all()
-    serialiser_class = PositionSerializer
+    serializer_class = PositionSerializer
     permission_classes = [permissions.IsAuthenticated]
